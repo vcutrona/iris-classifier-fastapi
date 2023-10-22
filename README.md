@@ -16,15 +16,15 @@ Make sure you have Docker installed.
 
 The input is a JSON with the following fields:
 
-* sepal_l
-* sepal_w
-* petal_l
-* petal_w
+* sepal_length
+* sepal_width
+* petal_length
+* petal_width
 
 Corresponding values are the measurements in cm.
 
 Example request:
 
-```
-curl 'http://localhost:8080/iris/classify_iris' -X POST -H 'Content-Type: application/json' -d '{"sepal_l": 5, "sepal_w": 2, "petal_l": 3, "petal_w": 4}'
+```shell
+curl 'http://localhost:8080/iris/classify_iris' -X POST -H 'Content-Type: application/json' -d '{"sepal_length": 5, "sepal_width": 2, "petal_length": 3, "petal_width": 4}'
 ```
